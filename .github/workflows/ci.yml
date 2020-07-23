@@ -1,0 +1,18 @@
+# see https://github.com/marketplace/actions/docker-layer-caching
+
+name: CI
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - run: docker-compose pull
+
+    - uses: satackey/action-docker-layer-caching@v0.0.3
+
+    - run: docker-compose run web sh -c "./wait-for-it.sh db:3306 && bin/rake db:create db:migrate spec RAILS_ENV=test"
