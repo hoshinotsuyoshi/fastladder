@@ -157,13 +157,13 @@ GEM
     minitest (5.11.3)
     multi_json (1.13.1)
     multipart-post (2.0.0)
+    mysql2 (0.4.10)
     net-http-digest_auth (1.4.1)
     net-http-persistent (3.0.0)
       connection_pool (~> 2.2)
     nokogiri (1.8.4)
       mini_portile2 (~> 2.3.0)
     ntlm-http (0.1.1)
-    pg (1.1.4)
     poltergeist (1.18.1)
       capybara (>= 2.1, < 4)
       cliver (~> 0.3.1)
@@ -319,9 +319,9 @@ DEPENDENCIES
   konacha
   launchy
   mini_magick
+  mysql2 (~> 0.4.10)
   nokogiri
   opml!
-  pg
   poltergeist
   pry-byebug
   pry-doc
@@ -342,4 +342,4 @@ DEPENDENCIES
   webmock
 
 BUNDLED WITH
-   1.16.2
+   1.17.2
