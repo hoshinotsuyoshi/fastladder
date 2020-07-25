@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-gem 'rails', '~> 4.2.10'
+gem 'rails'
 
 # Include database gems for the adapters found in the database
 # configuration file or DATABASE_URL
@@ -66,7 +66,6 @@ group :development do
   gem 'annotate'
   gem 'pry-rails'
   gem 'pry-doc'
-  gem 'quiet_assets'
 end
 
 group :test do
