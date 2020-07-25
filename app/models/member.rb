@@ -34,7 +34,7 @@ class Member < ActiveRecord::Base
   validates_confirmation_of :password, if: :password_required?
   validates_length_of :username, within: 3..40
   validates_uniqueness_of :username, case_sensitive: false
-  validates_uniqueness_of :auth_key, allow_nil: true
+  validates_uniqueness_of :auth_key, allow_nil: true, case_sensitive: true
   before_save :encrypt_password
 
   # Authenticates a user by their login name and unencrypted password.  Returns the user or nil.

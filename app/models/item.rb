@@ -21,7 +21,7 @@
 
 class Item < ActiveRecord::Base
   belongs_to :feed
-  validates :guid, presence: true, uniqueness: { scope: :feed_id }
+  validates :guid, presence: true, uniqueness: { scope: :feed_id, case_sensitive: true }
 
   before_validation :default_values
   before_save :create_digest, :fill_datetime
