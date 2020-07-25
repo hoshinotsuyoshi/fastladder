@@ -73,6 +73,7 @@ group :test do
   gem 'factory_bot_rails'
   gem 'launchy'
   gem 'poltergeist'
+  gem 'rails-controller-testing'
   gem 'rspec-activemodel-mocks'
   gem 'rspec-rails'
   gem 'simplecov'
