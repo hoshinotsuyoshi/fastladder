@@ -1,9 +1,10 @@
 GIT
-  remote: https://github.com/fastladder/opml
-  revision: e63daafd249816e2f038b4b60d40a12d118f907f
+  remote: https://github.com/hoshinotsuyoshi/opml
+  revision: b49add2d546600a79f4a8d740ba5ec3ed286d6ca
+  branch: relax_activesupport_dependency
   specs:
     opml (1.0.0)
-      activesupport (>= 3.2.12, < 5.1)
+      activesupport (>= 3.2.12)
 
 GEM
   remote: https://rubygems.org/

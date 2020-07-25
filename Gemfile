@@ -48,7 +48,7 @@ gem 'i18n-js'
 gem 'jbuilder'
 gem 'mini_magick'
 gem 'nokogiri'
-gem 'opml', git: 'https://github.com/fastladder/opml'
+gem 'opml', git: 'https://github.com/hoshinotsuyoshi/opml', branch: :relax_activesupport_dependency
 gem 'sassc-rails'
 gem 'settingslogic'
 gem 'uglifier'
