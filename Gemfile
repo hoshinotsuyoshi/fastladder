@@ -50,7 +50,7 @@ gem 'jquery-rails'
 gem 'mini_magick'
 gem 'nokogiri'
 gem 'opml', git: 'https://github.com/fastladder/opml'
-gem 'sass-rails', '~> 5.0.0'
+gem 'sassc-rails'
 gem 'settingslogic'
 gem 'uglifier'
 
