@@ -37,22 +37,22 @@ require 'yaml'
 
 # https://qiita.com/otsukishinsuke/items/f5ff336f63366c364909 0.5系は使えない
 # https://gitlab.com/gitlab-org/gitlab-foss/-/issues/37100 0.3系は使えない
-gem 'mysql2', '~> 0.4.10'
+gem 'mysql2'
 
 gem 'addressable', require: 'addressable/uri'
-gem 'coffee-rails', '~> 4.1.0'
+gem 'coffee-rails'
 gem 'feed_searcher', '>= 0.0.6'
 gem 'feedjira'
 gem 'haml'
 gem 'i18n-js'
-gem 'jbuilder', '~> 2.0'
+gem 'jbuilder'
 gem 'jquery-rails'
 gem 'mini_magick'
 gem 'nokogiri'
 gem 'opml', git: 'https://github.com/fastladder/opml'
 gem 'sass-rails', '~> 5.0.0'
 gem 'settingslogic'
-gem 'uglifier', '>= 1.3.0'
+gem 'uglifier'
 
 if ENV['NEW_RELIC_LICENSE_KEY']
   gem 'newrelic_rpm'
@@ -82,9 +82,4 @@ group :test do
   gem 'sinon-rails'
   gem 'puma'
   gem 'webmock'
-end
-
-group :production do
-  gem 'rails_12factor'
-  gem 'unicorn'
 end
