@@ -13,7 +13,6 @@ services:
     command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
     volumes:
     - ./docker/db/data:/var/lib/mysql
-    #- ./docker/db/my.cnf:/etc/mysql/conf.d/my.cnf
     ports:
     - 3307:3306
   web:
@@ -25,9 +24,6 @@ services:
     volumes:
       - .:/app
       - bundle:/usr/local/bundle
-      - node-modules:/app/node_modules/
-      # - packs:/app/public/packs
-      # - yarn-cache:/usr/local/share/.cache/yarn/v6
     stdin_open: true
     tty: true
     ports:
