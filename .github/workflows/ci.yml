@@ -12,11 +12,14 @@ jobs:
         env:
           TZ: Asia/Tokyo
           MYSQL_ROOT_PASSWORD: root
+      webdriver_chrome:
+        image: selenium/standalone-chrome
 
     container:
       image: ruby:2.6.6
       env:
         RAILS_ENV: test
+        SELENIUM_REMOTE_URL: http://webdriver_chrome:4444/wd/hub
         TZ: Asia/Tokyo
 
     steps:
