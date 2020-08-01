@@ -15,3 +15,4 @@ ADD Gemfile* /app/
 RUN bundle install -j9 --retry 3
 
 ADD . /app
+RUN SECRET_KEY_BASE=dummy bin/rails assets:precompile
