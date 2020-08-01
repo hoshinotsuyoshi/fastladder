@@ -10,6 +10,8 @@ RUN apt-get install -y curl apt-transport-https wget
 RUN mkdir /app
 WORKDIR /app
 
+RUN gem i foreman
+
 ADD Gemfile* /app/
 
 RUN bundle install -j9 --retry 3
