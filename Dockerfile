@@ -5,7 +5,7 @@ apt-get install -y \
 nodejs \
 build-essential
 
-RUN apt-get update && apt-get install -y curl apt-transport-https wget
+RUN apt-get install -y curl apt-transport-https wget
 
 RUN mkdir /app
 WORKDIR /app
